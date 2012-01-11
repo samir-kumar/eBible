@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- Application Strings -->
+    <string name="hello">Hello World, SplashActivity!</string>
+    <string name="app_name">EBible</string>
+
+<!-- Book List screen texts -->
+<string name="book_list_search_hint">John 3:16 or Jesus</string>
+</resources>

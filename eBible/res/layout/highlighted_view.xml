@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:id="@+id/highlighted_view_linear"
+    android:background="#ffffff">
+    <RelativeLayout 
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:background="#999999"    	
+    	android:padding="10dp">
+    	<Button 
+	 	   android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Back"
+    		android:layout_alignParentLeft="true"
+    		android:id="@+id/highlighted_view_back_btn"/>
+    <TextView
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"    	
+    	android:textColor="#000000"
+    	android:textStyle="bold"
+    	android:text="Highlighted Verses"
+    	android:layout_centerInParent="true"
+    	android:id="@+id/highlighted_view_heading_txt"/>
+		<Button 
+	 	   android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="Done"
+    		android:layout_alignParentRight="true"
+    		android:id="@+id/highlighted_view_ok_btn"/>	
+	</RelativeLayout>
+	<EditText 
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/highlighted_view_editbox"
+    	android:singleLine="false"
+    	android:padding="10dp"
+    	android:editable="true"
+    	android:background="#00000000"/>
+	<!-- <ListView
+	    android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:cacheColorHint="#00000000"
+    	android:padding="10dp"
+    	android:id="@+id/highlighted_view_list"/> -->
+</LinearLayout>

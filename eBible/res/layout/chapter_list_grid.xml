@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<AutoCompleteTextView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/chapter_list_search_box"
+    android:hint="@string/book_list_search_hint"/>    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="10dp"
+    	android:background="@color/black_color">
+        <TextView 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textColor="@color/white_color"
+    		android:textStyle="bold"
+    		android:id="@+id/chapter_list_bookname_txt"
+    		android:layout_alignParentLeft="true"
+    		android:layout_centerInParent="true"/>
+        <ImageView 
+            android:layout_width="30dp"
+    		android:layout_height="30dp"
+    		android:id="@+id/chapter_list_bookname_img"
+    		android:layout_alignParentRight="true"
+    		android:layout_centerInParent="true"
+    		android:src="@drawable/ic_launcher"/>
+    </RelativeLayout>
+    <GridView 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:id="@+id/chapter_list"
+    	android:horizontalSpacing="1dp"
+  		android:verticalSpacing="1dp"
+  		android:columnWidth="40dp"
+  		android:stretchMode="columnWidth"
+  		android:background="@color/gridlist_bg_color"
+  		android:numColumns="auto_fit"
+  		android:gravity="center_horizontal"
+    	android:cacheColorHint="@color/list_cachecolor"/>
+
+</LinearLayout>
